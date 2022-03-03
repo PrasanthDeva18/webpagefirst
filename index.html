@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <title>
+            Maverics 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+         
+    </head>
+    <body>
+
+        <section class="nature">
+            <img src="./PHOTO/peakpx.jpg" class="peakpx">
+            <div class="nature-text">
+                <h1>   
+                    Clean & Green technology
+                </h1>
+                <p>Using food waste as consumabale organic resource</p>
+                <div class="nature-btn">
+                    <a href="#"><span></span>Find out</a>
+                    <a href="#"><span></span>Read more</a>
+                
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="./login.html">LOGIN</a></li>
+                    <li><a href="./register.html">REGISTER</a></li>
+                    <li><a href="#feature">ABOUT</a></li>
+                    <li><a href="#meet">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="PHOTO/menu.png" id="menu">
+            </div>
+            <section id="feature">
+                <div class="title-text">
+                    <p>Features</p>
+                    <h1>Why choose us </h1>
+                </div>
+                <div class="feature-box">
+                    <div class="features">
+                        <h1>FOOD WASTE SMAPLE PICTURES</h1><br>
+
+
+                    </div>
+                    <div class="features-img">
+                        <img class="g" src="PHOTO/waste.jpeg"><br>
+                        <img class="g"src="PHOTO/Waste1.jpg"><br>
+                        <img class="g" src="PHOTO/waste3.jpg"><br><br>
+                        
+
+                    </div>
+                    <div class="top-companies">
+                        <div class="companies">
+                            <br><h1>TOP FOOD WASTE DIVERSION FOR PEPOLE VIEW </h1>
+                            <P><b>Most of the muncipalities, food product manufacturing business, schools, restaurants and gated communities a
+                                are investing in way to divert food waste from landfills.</b>  
+                            </P><br> 
+                            <p><a href="https://www.fao.org/food-loss-and-food-waste/flw-data)">Food watse</a>is a staggering global problem: Roughly a third of the food product for human consumption every year - 
+                                approximaattely 1.3 billions tons - is lost or wasted, according to the <acronym title="United Nation Environment Programme"> UNEP</acronym> . Meanwhile, 805 million pepole around the world are estimated to be chronically
+                                indernourished. The juxtaposition is enough to put you off your lunch.
+                            </p><br>  
+                            <p>This site for register the rethinking of food waste companies for the the pepole and farmers views</p>
+                            <p>In this site we can distribute the food wastes and for the producing companies </p>
+                        </div>
+                    </div>
+                    <section id="meet">
+                    <div class="meet-us">
+                        <div class="meet">
+                            <br><h1>CONTACT US </h1>
+                            <P><a href="mailto:mymailid@gmail.com">Contact us</a>If you any reference contact this </P>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <script>
+            var menubtn = document.getElementById("menubtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menubtn.onclick = function()
+            {
+                if(sideNav.style.right == "-250px")
+                {
+                    sideNav.style.right = "0";
+                    menu.src = "PHOTO/close.jpg";
+
+                }
+                else
+                {
+                    sideNav.style.right = "-250px";
+                    menu.src = "PHOTO/menu.png";
+                }
+
+            } 
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+            </script>
+            <!-- <div class="nature">
+                <div class="sideNav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><button class='loginbtn' onclick="docuument.getElementById('login-form').style.display='block'" style="width:auto;">LOGIN</button></li>
+                            <li><a href="#">REGISTER</a></li>
+                            <li><a href="#feature">ABOUT</a></li>
+                            <li><a href="#">MEET US</a></li>
+                        </ul>
+                    </nav>
+
+                </div> -->
+                <div id='login-form' class='login-page'>
+                    <div class="form-box">
+                        <div class='button-box'>
+                        <div id="btn"></div>
+                            <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                            <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                        </div>
+                        <form id='login' class='input-group-login'>
+                            <input type='text' class='input-field' placeholder='Email id' required>
+                            <input type='password' class='input-field' placeholder='Enter password' required>
+                            <input type='checkbox' class='check-box'><span>remember password</span> 
+                            <button type='submit' class='submit-btn'>Log in</button>
+                            
+
+                         </form>
+                         <form id='register' class='input-group-register'>
+                             <input type='text' class='input-field' placeholder='First name' required>
+                             <input type='text' class='input-field' placeholder='Last name' required>
+                             <input type='email' class='input-field' placeholder='Email Id' required>
+                             <input type='password' class='input-field' placeholder='Enter password' required>
+                             <input type='password' class='input-field' placeholder='Confirm password' required>
+                             <input type='checkbox' class='check-box'><span>I agree to the terms and condition</span>
+                             <button type='submit' class='submit-btn'>Register</button>
+                             
+
+                             
+
+                         </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+            <script>
+
+               var x=document.getElementById('login');
+                
+                        var y=document.getElementById('register');
+                
+                        var z=document.getElementById('btn');
+                
+                        function register()
+                
+                        {
+                
+                            x.style.left='-400px';
+                
+                            y.style.left='50px';
+                
+                            z.style.left='110px';
+                
+                        }
+                
+                        function login()
+                
+                        {
+                
+                            x.style.left='50px';
+                
+                            y.style.left='450px';
+                
+                            z.style.left='0px';
+                
+                        }
+                
+                    </script>
+                
+                    <script>
+                
+               var modal = document.getElementById('login-form');
+                
+               window.onclick = function(event)
+                
+               {
+                
+                 if (event.target == modal)
+                
+                 {
+                
+              modal.style.display = "none";
+                
+                 }
+                
+               }
+                
+                  </script>
+    </body>
+</html>
